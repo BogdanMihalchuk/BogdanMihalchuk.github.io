@@ -18,19 +18,25 @@
     font-weight: bold;
     font-style: normal;
 }
+body{
+	background: url(../image/Background.jpg) repeat-x;
+	margin: 0 auto;
+	font-family: "Helvetica Neue";
+	height: 1028px;
+}
 
 .page
 {
 	width: 1210px;
-	height: 1028px;
-	background: url(../image/Background.jpg) no-repeat;
+	/*height: 1028px;*/
+	/*background: url(../image/Background.jpg) repeat;*/
 	margin: 0 auto;
 }
 .top-line_menu
 {
 	height: 36px;
-	background: url(../image/Background-menu.jpg) no-repeat;
-	padding-left: 480px;
+	background: url(../image/Background-menu.jpg) repeat;
+	padding-left: 920px;
 }
 .top-line_menu ul li{
 
@@ -92,9 +98,7 @@ color: white;
 	margin: 35px 140px 0px 140px;
 
 }
-#ou{
-margin: 30px 140px 0px 140px;
-}
+
 .itput_text{
 	height: 30px;
 	width: 275px;
@@ -146,4 +150,33 @@ footer{
 	width: 307px;
 	text-align: center;
 	margin: 23px 125px;
+}
+
+.ou{
+margin: 30px 140px 0px 140px;
+height: 5px;
+width: 291px;
+position: relative;
+}
+.hr-left{
+	height: 2px;
+	width: 123px;
+	float: left;
+	background: #666666;
+}
+.hr-right {
+	height: 2px;
+	width: 123px;
+	float: right;
+	background:#666666;
+}
+.text	{
+	color: #999999;
+
+	font-size: 14px;
+	height: 20px;
+	float: left ;
+	position: absolute;
+	left: 136px;
+	top: -5px;
 }
