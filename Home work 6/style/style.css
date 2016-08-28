@@ -154,12 +154,21 @@ nav a {
 	text-decoration: none;
 }
 .logo	{
+	height: 237px;
+	width: 909px;
+	background: url(../image/logo.png);
 	margin-top: 6px;
+	position: relative;
 }
+.logo img{
+	position: absolute;
+	top:50px;
+}
+
 .main_menu{
 		width: 908px;
 		height: 31px;
-		margin-top: 4px;
+		margin-top: 6px;
 		border: 1px solid #0d1642;
 		border-radius: 6px;
 		background: linear-gradient(to top, #000000 0%,#576068 100%);
