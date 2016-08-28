@@ -17,8 +17,8 @@
     font-style: normal;
 }
 .page {
-	width: 1000px;
-	height: 1310px;
+	width: 910px;
+/*	height: 1310px;*/
 	margin:0 auto;
 }
 header{
@@ -167,7 +167,7 @@ nav a {
 }
 .main_menu ul{
 	height: 33px;
-	width: 625px;
+	width: 630px;
 	float:left;
 }
 .main_menu ul li{
@@ -226,7 +226,7 @@ nav a {
 }
 
 .purse{
-	margin-left: 57px;
+	margin-left: 52px;
 	margin-top: 2px; 
 	height: 25px;
 	float: left;
@@ -398,13 +398,13 @@ main {
 	color: #114165;
 	display: block;
 	height: 18px;
-	width: 120px;
+	width: 121px;
 	text-decoration: none;
 
 }
 
 .naymenyvanie li{
-	width: 120px;
+	width: 121px;
 	margin-top: 8px;
 
 }
