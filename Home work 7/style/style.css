@@ -9,11 +9,7 @@
   	display: table;
   	clear: both;
 }
-body{
 
--moz-box-sizing: border-box; 
-box-sizing: border-box;	
-}
 .section_one{
 width: 100%;
 height: 846px;
@@ -37,7 +33,6 @@ border-bottom: 2px #0d151b solid;
 	height: 607px;
 box-sizing: content-box;
 	background: #f9f9f9;
-	border-top: 
 }
 .section_four{
 	width: 100%;
@@ -57,7 +52,7 @@ background-size: cover;
 header{
 	box-sizing: content-box;
 	width: 100%;
-	max-width: 959px;
+	max-width: 960px;
 	margin:0 auto;
 	padding-top: 67px;
 
@@ -85,7 +80,7 @@ text-decoration: none;
 .menu{
 	padding-top: 6px;
 	display: inline-block;
-	float: left;
+	float: right;
 	font-family: "LeagueGothic";
 	font-size: 24px;
 	text-transform: uppercase;
@@ -93,7 +88,6 @@ text-decoration: none;
     font-style: normal;
     box-sizing: content-box;
     text-shadow: -1px 2px 2px rgba(0, 0, 0, 0.4);
-    margin-left: 15%
 
 }
  .menu__item:first-child{
@@ -222,7 +216,7 @@ margin-left: 1.3%;
 	width: 26px;
 	height: 26px;
 background: url(../image/sprites.png);
-margin-top: 7px;
+
 }
 
 .blur_header_info	{
@@ -556,6 +550,7 @@ margin: 0 auto;
 	font-size: 20px;
 	text-transform: uppercase;
     margin-left: 0;
+    float: left;
 
 
  }
@@ -572,8 +567,8 @@ margin-left: 0
 }
 
 footer p {
-	display: inline-block;
-	float: right;
+display: inline-block;
+float: right;
 font-family: 'Open Sans', "open_sanslight";
 font-size:12px;
 color: white;
@@ -586,7 +581,7 @@ margin-top: 5.6%;
 	font-weight:800 ;
 }
 
-@media all and (max-width: 959px)
+@media screen and (max-width: 959px)
 {
 .section_one{
 
@@ -600,7 +595,7 @@ height: 798px;
 	clear: both;
 	padding-top: 28px;
 	display: block;
-	float: none;
+	float: left;
     box-sizing: content-box;
  margin-left: 0;
 }
@@ -640,17 +635,154 @@ margin-top: 75px;
 .nav_slide {
     margin-top: 3.3%;
     margin-left: 68.2%;
-}
-.section_two{
-margin-top: 31px ;
 
 }
 .blur_header_info {
     letter-spacing: -0.4px;
     font-size: 24px;
-    margin-left: 25px;
+       margin-left: 29px;
+   }
+.blur_main_info {
+    margin-top: 0px;
+    margin-left: 54px;
+    line-height: 23px;
+    height: 135px;
+    overflow: hidden;
+}
+.read__more {
+  float: right;
+  margin-left: 0;
+  margin-right: 21px;
+    margin-top: 17px;
+    letter-spacing: -0.6px;
 }
 
+.info__company--786px{
+	margin-left: 32px;
+}
+.sprites--idea{
+    margin-top: 0px;
+}
+.info__company--bloc__3__786px{
+margin-left: 40px;
 
 }
+.sprites--note {
 
+    margin-top: 0;
+}
+.testimonical {
+    margin-left: 23px;
+    margin-top: 100px;
+    width: 41.0156%;
+}
+.testimonical__header {
+  
+    font-size: 24px;
+  margin-left: 17px;
+    margin-top: 32px;
+    letter-spacing: -0.2px;
+}
+.testimonical__header--pink {
+      clear: both;
+    text-transform: uppercase;
+    margin-left: 40px;
+    margin-top: -13px;
+    letter-spacing: -0.2px;
+
+}
+.testimonical__main {
+    display: inline-block;
+    margin: 9px 35px 0px 40px;
+    line-height: 24px;
+    height: 135px;
+    overflow: hidden;
+}
+.blog {
+margin-top: 132px;
+margin-right: 11px;
+}
+.post__info {
+    display: inline-block;
+       width: 255px;
+    height: 18px;
+    overflow: hidden;
+}
+.post__header--2 {
+	margin-top: 22px;
+}
+.testimonikal_nav{
+    margin-left: 139px;
+    margin-top: 8px;
+}
+.footer__logo {
+    width: 99%;
+  	margin-top: 12.5%;
+    margin-left: 4px;
+}
+.brend__2{
+ margin-left: 27px;
+}
+.brend__3{
+margin-left: 53px;
+}
+
+.brend__4{
+margin-left: 66px;
+}
+.brend__5{
+    margin-left: 61px;
+    margin-top: 23px;
+}
+.brend__6{
+ margin-left: 55px;
+}
+section{
+ height: 210px;
+overflow: hidden;
+    padding-top: 100px;
+}
+.logo__footer{
+font-size: 32px;
+letter-spacing: 0 ;
+   
+}
+.ER__footer {
+
+    margin-left: -5px;
+}
+.comments {
+    margin-left: 46px;
+}
+.company_wrap{
+margin-top: 10px;
+}
+.comments_header {
+
+    font-size: 24px;
+  
+}
+.comments_wrap {
+  margin-top: 12px;
+}
+.cotegories{
+ 
+ margin-left: 45px;
+}
+.cotegories_header {
+  padding-top: 3px;
+    font-size: 24px;
+   
+}
+.section_five{
+height: 200px;
+}
+.menu--footer {
+    padding-top: 50px;
+}
+
+footer p {
+    margin-top: 105px;
+    margin-right: 39px;
+}
+}
