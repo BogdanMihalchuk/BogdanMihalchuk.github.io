@@ -56,7 +56,8 @@ background-size: cover;
 
 header{
 	box-sizing: content-box;
-	width: 960px;
+	width: 100%;
+	max-width: 959px;
 	margin:0 auto;
 	padding-top: 67px;
 
@@ -92,8 +93,11 @@ text-decoration: none;
     font-style: normal;
     box-sizing: content-box;
     text-shadow: -1px 2px 2px rgba(0, 0, 0, 0.4);
-    margin-left: 13.543%;
+    margin-left: 15%
 
+}
+ .menu__item:first-child{
+ margin-left: 0px;
 }
 .menu__item{
 
@@ -123,13 +127,15 @@ margin-top: 163px;
 
 }
 .left_arrow{
-display: inline-block;
+display:block;
 float: left;
 margin-top: 19%;
 margin-right: 1.2%;
 }
 .slider{
-width: 960px;
+	width: 100%;
+max-width: 960px;
+
 margin: 0 auto;
 -moz-box-sizing: border-box; 
 box-sizing: border-box;
@@ -191,7 +197,8 @@ margin-left: 74%;
 }
 
 main {
-width:960px;
+	width: 100%;
+max-width:960px;
 margin: 0 auto;
     margin-top: 77px;
 ;
@@ -411,6 +418,12 @@ margin-top: 9.8%;
 margin-left: 9.7%;
 }
 
+.footer__logo a {
+display: block;
+box-sizing: content-box;
+float: left;
+
+}
 .brend__2{
  margin-left: 8%;
 }
@@ -423,10 +436,10 @@ margin-left: 9.7%;
 }
 .brend__5{
     margin-left: 8.6%;
-    margin-bottom: 2.8%;
+    margin-top: 2.8%;
 }
 .brend__6{
- margin-left: 7.5%;
+ margin-left: 10.1%;
 }
 
 section{
@@ -572,3 +585,72 @@ margin-top: 5.6%;
 .famaly_extrabold{
 	font-weight:800 ;
 }
+
+@media all and (max-width: 959px)
+{
+.section_one{
+
+height: 798px;
+}
+.logo{
+    letter-spacing: -0.6px;
+}
+
+.menu{
+	clear: both;
+	padding-top: 28px;
+	display: block;
+	float: none;
+    box-sizing: content-box;
+ margin-left: 0;
+}
+ .menu__item:first-child{
+ margin-left: 0;
+ }
+.slider_bg{
+margin-top: 75px;
+}
+.left_arrow {
+    margin-top: 24%;
+    margin-right: 0.5%;
+}
+.spoiler_slider {
+        width: 47%;
+
+}
+.slider__header__1 {
+    font-size: 48px;
+    margin-top: 98px;
+}
+.slider__header__2 {
+    font-size: 24px;
+    margin-top: 10px;
+}
+ .slider__info {
+    font-size: 16px;
+    line-height: 25px;
+    margin-top: 9px;
+}
+.iphone {
+    margin-top: -2.8%;
+}
+.right_arrow {
+    margin-top: 24.2%;
+}
+.nav_slide {
+    margin-top: 3.3%;
+    margin-left: 68.2%;
+}
+.section_two{
+margin-top: 31px ;
+
+}
+.blur_header_info {
+    letter-spacing: -0.4px;
+    font-size: 24px;
+    margin-left: 25px;
+}
+
+
+}
+
