@@ -12,10 +12,10 @@
 
 .section_one{
 width: 100%;
+min-width: 320px;
 height: 846px;
 background: url(../image/header_bg.jpg) no-repeat;
-background-size: cover;
-position: relative;	
+background-size: cover;	
 
 }
 .section_two{
@@ -77,6 +77,11 @@ text-decoration: none;
     color: #583e63;
     margin-left: -5px;
 }
+
+nav {
+	display: inline-block;
+	float: right;
+}
 .menu{
 	padding-top: 6px;
 	display: inline-block;
@@ -110,8 +115,91 @@ box-sizing: content-box;
 
 .menu__link:hover{
 	border-bottom: 2px solid #edbfff;
+}
+.menu--480px{
+	clear: both;
+display: none;
+float: none;
+width: 245px;
+height: 45px;
+margin: 0 auto;
+position: relative;
+box-sizing: border-box;
+}
+
+
+.menu__item__480px{
+display: block;
+
+height: 45px;
+box-sizing:border-box;
+text-align: center;
+line-height: 45px;
+	font-family: "LeagueGothic";
+	font-size: 24px;
+
+	
+}
+
+.menu__link__480px{
+	display: block;
+	text-decoration: none;
+	box-sizing:border-box;
+	color: white;
+	}
+
+
+.menu--dropdown{
+width: 245px;
+position: absolute; 
+top: 100%; 
+left: -1px;
+box-sizing: border-box;
+box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.2);
+
+	
+}
+
+.menu__item--dropdown{
+		display: none;
+width: 245px;
+height: 45px;
+box-sizing: border-box;
+border-top: 2px #35273d solid;
+box-shadow: inset 0px 2px 1px 0px rgba(105,82,114,0.6);	
+border: 1px #051116 solid;
+background-color: #36293e;
+border-bottom: none;
+border-top: none;
+}
+
+.menu__item--dropdown--last {
+	box-shadow: inset 0px 2px 1px 0px rgba(105,82,114,0.6);	
+
+	border-radius: 0px 0px 10px 10px;
+}
+ .menu__item__480px:hover .menu__item--dropdown{
+	display: block;
 
 }
+.menu--480px:hover {
+border-bottom: 2px solid #edbfff;
+background-color: #36293e;
+border-radius: 10px 10px 0px 0px;
+border: 1px #051116 solid;
+border-bottom: none;
+}
+.menu__item--dropdown:hover {
+	border-bottom: 2px solid #edbfff;
+	background-color: rgba(43,35,50, 0.7)
+}
+
+
+
+
+
+
+
 .slider_bg{
 
 height: 400px;
@@ -591,7 +679,8 @@ height: 798px;
     letter-spacing: -0.6px;
 }
 
-.menu{
+
+nav {
 	clear: both;
 	padding-top: 28px;
 	display: block;
@@ -785,4 +874,15 @@ footer p {
     margin-top: 105px;
     margin-right: 39px;
 }
+}
+@media screen and (max-width: 767px)
+{
+nav {
+	display: none;
+}
+
+.menu--480px{
+	display: block;
+}
+
 }
