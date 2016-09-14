@@ -883,10 +883,10 @@ box-sizing: content-box;
 }
 .logo{	
 margin-bottom: 16px;    
-  display: inline-block;
-    float: none;
-        margin-left: 37%;
-    margin-right: 37%;
+display: inline-block;
+float: none;
+    margin-left: 35%;
+
 }
 header {
 	
@@ -1150,8 +1150,8 @@ footer {
 
 .logo {
  
-    margin-left: 25%;
-    margin-right: 25%;
+    margin-left: 35%;
+
 }
 .iphone{
 	display: none;
