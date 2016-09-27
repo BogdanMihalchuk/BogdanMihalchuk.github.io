@@ -819,15 +819,15 @@ footer p {
 }
 
 .menu--480px {
-	width: 37px;
-       position: absolute;
-    left: 46.834%;
-    right: 46.834%;
-    margin: 0 auto;
-    padding-top: 0px;
-    display: block;
-  	float: none;
-  	box-sizing: content-box;
+width: 37px;
+position: absolute;
+left: 25%;
+right: 25%;
+margin: 0 auto;
+padding-top: 0px;
+display: block;
+float: none;
+box-sizing: content-box;
 }
 .menu--480px:hover {
 	position: absolute;
@@ -1047,14 +1047,14 @@ float: none;
  
     margin-left: 0px;
 }
-.footer__logo { 
-width: 100%; 
-height: auto; 
-max-width: 320px; 
-padding-top: 126px; 
-margin-top: 0; 
-display: block; 
-clear: both; 
+.footer__logo {
+width: 100%;
+height: auto;
+max-width: 320px;
+/* padding-top: 126px; */
+/* margin-top: 0; */
+display: block;
+clear: both;
 }
 .footer__logo a:first-child{
 margin-left: -3px;
