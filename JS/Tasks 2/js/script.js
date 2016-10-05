@@ -1,4 +1,6 @@
 // create main
+
+
 var newMain = document.createElement('div');
 newMain.classList.add('main');
 document.body.appendChild(newMain);
@@ -16,33 +18,34 @@ paragraph.classList.add('header_Question');
 paragraph.innerHTML = '1. Вопрос №1';
 newForm.appendChild(paragraph);
 
-function createChekbox() {
+function createChekboxQuestion() {
 
 	for (var i = 1; i < 4; i++) {
-		// var id = 'lb' + i;
-		var val = 'val_' + i;
-		var txt = 'Вариант ответа №' + i;
-		var clas = 'answer__checkbox';
+
+		var valueInput = 'val_' + i;
+		var LabelTxt = 'Вариант ответа №' + i;
+		var chekboxClas = 'answer__checkbox';
+		var idInput = 'Question ' + i;
 
 		var newChekbox = document.createElement("p");
 		var newInput = document.createElement("input");
 		newInput.type = "checkbox";
-		// newInput.id = id;
+		newInput.id = idInput;
 		newInput.name = "answer";
-		newInput.value = val;
+		newInput.value = valueInput;
 		newInput.checked = false;
-		newChekbox.classList.add(clas);
+		newChekbox.classList.add(chekboxClas);
 		newChekbox.appendChild(newInput);
 		newForm.appendChild(newChekbox);
 
 		var newLabel = document.createElement("label");
-		// newLabel.setAttribute("for", id);
-		newLabel.innerHTML = txt;
+		newLabel.setAttribute("for", idInput);
+		newLabel.innerHTML = LabelTxt;
 		newChekbox.appendChild(newLabel);
 		newForm.appendChild(newChekbox);
 	}
 }
-createChekbox();
+createChekboxQuestion();
 
 
 var question_2 = document.createElement('p');
@@ -50,14 +53,70 @@ question_2.classList.add('header_Question');
 question_2.innerHTML = '2. Вопрос №2';
 newForm.appendChild(question_2);
 
-createChekbox();
+function createChekboxQuestion2() {
+
+	for (var i = 1; i < 4; i++) {
+
+		var valueInput = 'val_' + i;
+		var LabelTxt = 'Вариант ответа №' + i;
+		var chekboxClas = 'answer__checkbox';
+		var idInput = 'Question__2 ' + i;
+
+		var newChekbox = document.createElement("p");
+		var newInput = document.createElement("input");
+		newInput.type = "checkbox";
+		newInput.id = idInput;
+		newInput.name = "answer" ;
+		newInput.value = valueInput;
+		newInput.checked = false;
+		newChekbox.classList.add(chekboxClas);
+		newChekbox.appendChild(newInput);
+		newForm.appendChild(newChekbox);
+
+		var newLabel = document.createElement("label");
+		newLabel.setAttribute("for", idInput);
+		newLabel.innerHTML = LabelTxt;
+		newChekbox.appendChild(newLabel);
+		newForm.appendChild(newChekbox);
+	}
+}
+createChekboxQuestion2();
+
+
 
 var question_3 = document.createElement('p');
 question_3.classList.add('header_Question');
 question_3.innerHTML = '3. Вопрос №3';
 newForm.appendChild(question_3);
 
-createChekbox();
+function createChekboxQuestion3() {
+
+	for (var i = 1; i < 4; i++) {
+
+		var valueInput = 'val_' + i;
+		var LabelTxt = 'Вариант ответа №' + i;
+		var chekboxClas = 'answer__checkbox';
+		var idInput = 'Question__3 ' + i;
+
+		var newChekbox = document.createElement("p");
+		var newInput = document.createElement("input");
+		newInput.type = "checkbox";
+		newInput.id = idInput;
+		newInput.name = "answer";
+		newInput.value = valueInput;
+		newInput.checked = false;
+		newChekbox.classList.add(chekboxClas);
+		newChekbox.appendChild(newInput);
+		newForm.appendChild(newChekbox);
+
+		var newLabel = document.createElement("label");
+		newLabel.setAttribute("for", idInput);
+		newLabel.innerHTML = LabelTxt;
+		newChekbox.appendChild(newLabel);
+		newForm.appendChild(newChekbox);
+	}
+}
+createChekboxQuestion3();
 
 var newInputSubmit = document.createElement("input");
 newInputSubmit.type = "submit";
