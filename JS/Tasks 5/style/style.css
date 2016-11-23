@@ -1,0 +1,103 @@
+.clearfix:before
+{
+  	content: '';
+  	display: table;
+}
+.clearfix:after
+{
+  	content: '';
+  	display: table;
+  	clear: both;
+}
+
+.niceCheck {
+margin-left: 20px;
+width: 17px;
+height: 17px;
+display: block;
+cursor: pointer;
+background: url(..//image/checkbox.png);
+
+}
+.niceCheck input {
+display: none;
+
+}
+.niceCheck label {
+    width: 100px;
+    display: block;
+    margin-left: 20px;
+}
+
+.checkbox input[type=checkbox]{
+display:none;  
+
+}
+.checkbox label 
+ {
+
+ width: 110px;
+ display: inline-block;
+cursor: pointer;
+position: relative;
+padding-left: 48px;
+margin-top: 7px;
+
+}
+.checkbox label::before{
+content: "";
+display: inline-block;
+width: 12px;
+height: 12px;
+border: 1px solid #164161;
+border-radius: 5px;
+background-color: white;
+position: absolute;
+top: 3px;
+left: 21px;
+}
+
+.checkbox input[type=checkbox]:checked+label:before {
+    content: "\2714";
+    font-size: 12px;
+    text-align: center;
+    line-height: 12px;
+}
+.menu {
+	height: 40px;
+	margin: 10px;
+	background: red;
+	display: inline-block;
+}
+
+.menu a {
+	text-decoration: none;
+	display: block;	
+}
+
+.menu__item{
+
+	width: 120px;
+	line-height: 40px;
+	text-align: center;
+	float: left;
+
+}
+
+.submemu--1 {
+		display: none;
+		background: #000;
+		margin-bottom: 50px;
+
+}
+.submemu--2 {
+	background: grey;
+  z-index: 1;
+  position: absolute;
+  display: none;
+    margin-top: -35px;
+    margin-left: 120px;
+
+}
+
+
