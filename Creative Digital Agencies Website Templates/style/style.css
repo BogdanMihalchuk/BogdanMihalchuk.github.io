@@ -241,3 +241,22 @@ text-align: center;
   color: #FFF;
   line-height: 1.6;
 }
+
+.news-wrap{
+	display: flex;
+	width: 100%;
+	flex-wrap: wrap;
+	justify-content: center;
+	flex-direction: row;
+	align-items: stretch;
+}
+.block-news{
+height: 45vh	;
+width: 40rem;
+	display: flex;
+	border: 1px solid black;
+	margin: 10px;
+	overflow: hidden;
+
+	
+}
