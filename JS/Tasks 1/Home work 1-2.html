@@ -11,10 +11,8 @@
   var x = prompt("Введите число для поднисение в степень:", '');
   var n = prompt("Введите степень для числа:", '');
 
-function pow(x, n) {
+function pow(x,n) {
   var result = x;
- 
-
   for (var i = 1; i < n; i++) {
     result *= x;
   }
@@ -25,39 +23,39 @@ function pow(x, n) {
 if (n <= 0) {
   console.log('Степень ' + n + 'не поддерживается введите степень большую 0');
 } else {
-  console.log( pow (x, n) );
+  alert( pow (x, n) );
 }
 
 
-var	arr = [];
+// var	arr = [];
   
-  for 	(var i = 0; i < 5; i++){
-  	arr[i] = prompt("Введите " + (i + 1) + "-ое имя");
+//   for 	(var i = 0; i < 5; i++){
+//   	arr[i] = prompt("Введите " + (i + 1) + "-ое имя");
 
-  }
-  console.log( arr );
+//   }
+//   console.log( arr );
 
-var userName = prompt("Введите ваше имя:", '');
-var user;
+// var userName = prompt("Введите ваше имя:", '');
+// var user;
 
-for (var i=0; i < arr.length; i++){
-  var index = arr[i].indexOf(userName) +1;
+// for (var i=0; i < arr.length; i++){
+//   var index = arr[i].indexOf(userName) +1;
 
-if (index === 1) {
+// if (index === 1) {
 
-  user = userName;
+//   user = userName;
 
-	}
-    }
-if (user == userName){
+// 	}
+//     }
+// if (user == userName){
   
-  alert( userName+ " вы успешно вошли")	
-   console.log( userName+ " вы успешно вошли" ); 
-}
-else {
-  alert( 'Ошыбка введите правильно имя' );
-  console.log( 'Ошыбка введите правильно имя' );  
-}	
+//   alert( userName+ " вы успешно вошли")	
+//    console.log( userName+ " вы успешно вошли" ); 
+// }
+// else {
+//   alert( 'Ошыбка введите правильно имя' );
+//   console.log( 'Ошыбка введите правильно имя' );  
+// }	
 
 
 
