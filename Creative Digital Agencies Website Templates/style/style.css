@@ -52,6 +52,9 @@ overflow: hidden;
 
 
 }
+#menu-checkbox{
+	display: none;
+}
 nav{
 
 	width: 60%;
@@ -197,6 +200,7 @@ nav ul li{
 	-ms-align-items: center;
 	-webkit-box-align: center;
 	        align-items: center;
+					height: 200px;
 
 }
 .heading h1 {
@@ -296,12 +300,13 @@ text-align: center;
     height: 50vh;
 	display: -webkit-box;;
 	display: flex;
-	min-width: 484px;
+	min-width: 330px;
 	flex-basis: 47%;
 	-webkit-box-pack: center;
 	        justify-content: center;
 	overflow: hidden;
 	box-sizing: border-box;
+
 }
  .block-news img{
 		overflow: inherit;
@@ -313,11 +318,15 @@ text-align: center;
 	-ms-align-items: center;
 	-webkit-box-align: center;
 					align-items: center;
+						padding:  0 10px;
+						box-sizing: border-box;
 }
 .block-news:last-child {
 	-ms-align-items: center;
 	-webkit-box-align: center;
 					align-items: center;
+						padding:  0 10px;
+						box-sizing: border-box;
 }
 
 
@@ -434,7 +443,8 @@ margin-top: -30px;
 .quick-wrap {
 	display: -webkit-box;
 	display: flex;
-	justify-content: space-evenly;
+	-webkit-box-pack: space-evenly;
+	        justify-content: space-evenly;
 	width: 100%;
 	margin-bottom: 100px;
 }
@@ -451,7 +461,9 @@ margin-top: -30px;
 				 justify-content: center;
  overflow: hidden;
  box-sizing: border-box;
- flex-direction: column;
+ -webkit-box-orient: vertical;
+ -webkit-box-direction: normal;
+         flex-direction: column;
 	overflow: hidden;
 	text-align: center;
 	font-family: "Open Sans";
@@ -545,6 +557,7 @@ margin: auto 0;
 	-webkit-box-pack: center;
 	        justify-content: center;
 	color:white;
+	    margin-left: 20px;
 }
 .key-feature__infobloc h1 {
   font-size: 25px;
@@ -569,7 +582,8 @@ margin: auto 0;
   background-color: rgb(17, 116, 158);
 	margin: 10px 0;
 	line-height:40px;
-	padding-left: 15px
+	padding-left: 15px;
+	box-sizing: border-box;
 }
 .key-feature__infobloc__persent>p:nth-child(1){
 	width: 85%;
@@ -583,8 +597,10 @@ margin: auto 0;
 	width: 100%;
 }
 .quick-wrap__team{
+	display: -webkit-box;
 	display: flex;
-	justify-content: space-evenly;
+	-webkit-box-pack: space-evenly;
+	        justify-content: space-evenly;
 	margin-bottom: 70px;
 	box-sizing:content-box;
 }
@@ -613,10 +629,7 @@ margin: auto 0;
 .contack-area-wrap{
 width: 100%;
 height: 90vh;
-background-image: url(..//image/bg_comtact.jpg);
-    -moz-background-size: 100%; /* Firefox 3.6+ */
-    -webkit-background-size: 100%; /* Safari 3.1+ и Chrome 4.0+ */
-    -o-background-size: 100%; /* Opera 9.6+ */
+background-image: url(..//image/bg_comtact.jpg); /* Firefox 3.6+ */ /* Safari 3.1+ и Chrome 4.0+ */ /* Opera 9.6+ */
     background-size: 100%;
 display: -webkit-box;
 display: flex;
@@ -630,18 +643,25 @@ justify-content: space-around;
 }
 .form-container {
 	width: 70%;
+display: -webkit-box;
 display: flex;
 }
 form{
+	display: -webkit-box;
 	display: flex;
-	flex-direction: column;
-	flex-grow: 1;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	        flex-direction: column;
+	-webkit-box-flex: 1;
+	        flex-grow: 1;
 
 }
 .multi-input {
+	display: -webkit-box;
 	display: flex;
 	margin-bottom: 30px;
-	justify-content: space-between;
+	-webkit-box-pack: justify;
+	        justify-content: space-between;
 
 }
 form>div>input, textarea {
@@ -655,7 +675,8 @@ form>div>input, textarea {
 textarea {
 	height: 150px;
 	resize:none;
-	flex-grow: inherit;
+	-webkit-box-flex: inherit;
+	        flex-grow: inherit;
 	padding: 10px;
 	margin-bottom: 30px
 }
@@ -668,11 +689,13 @@ line-height: 45px;
 padding-left: 10px;
 }
 input[type="submit"]{
+		display: -webkit-box;
 		display: flex;
 	  background-color: rgb( 17, 116, 158 );
 		height: 60px;
 		width: 230px;
-		justify-content: center;
+		-webkit-box-pack: center;
+		        justify-content: center;
 		margin: auto;
   font-size: 22px;
   font-family: "Gotham";
@@ -680,16 +703,167 @@ input[type="submit"]{
   text-transform: uppercase;
 }
 #map{
+	display: -webkit-box;
 	display: flex;
 	width: 100%;
 	height: 330px;
 }
 footer {
+	display: -webkit-box;
 	display: flex;
-	align-items: center;
+	-webkit-box-align: center;
+	        align-items: center;
 	height: 10vh;
 padding-left: 40px;
 	background-color: #222222;
 	color: #fff;
 	font-size: 13px;
+}
+@media screen and (max-width: 1024px)
+{
+nav{
+	width: 70%;
+}
+.menu-link{
+	font-size: 18px;
+}
+.social-links{
+	width: 15%;
+}
+.block-news {
+    height: 40vh;
+	}
+	.bloc-news__text h1 {
+    font-size: 20px;
+	}
+	.bloc-news__text p {
+    font-size: 14px;
+}
+.quick-wrap{
+	justify-content: space-evenly;
+	flex-wrap: wrap;
+}
+.info-blog-team {
+    min-width: 375px;
+		align-items: center;
+		margin-bottom: 20px;
+		box-sizing: border-box;
+	}
+	.info-blog-team img{
+		width: 300px;
+	}
+
+	.quick-action{
+		align-items: center;
+	}
+	.key_feature__iphone img{
+		width: 70%;
+	}
+	.key_feature__iphone{
+		display: flex;
+		justify-content: center;
+	}
+	.employee{
+min-width: 355px;
+
+	}
+}
+@media screen and (max-width: 768px)
+{
+	.about_agency-wrap{
+		height: 100%;
+	}
+.heading h1 {
+    font-size: 20px;
+    margin-top: 20px;
+}
+.heading h2 {
+    font-size: 10px;
+		margin-top: -20px;
+}
+.company-feature {
+    flex-wrap: wrap;
+    margin-bottom: 50px;
+}
+.item-bloc{
+	margin-bottom: 30px;
+	box-sizing: border-box;
+}
+.block-news {
+    height: 35vh;
+		min-width: 470px;
+}
+.item-bloc p {
+    font-size: 20px;
+	}
+	.quick-action-wrap {
+    flex-wrap: wrap;
+	}
+	.quick-action {
+		 flex-basis: auto;
+		   margin:0 20px;
+		}
+		.quick-action:first-child {
+	margin-right: 0;
+		}
+		.quick-action p {
+    font-size: 14px;
+	}
+	.key-feature {
+    flex-wrap: wrap;
+}
+.key-feature__infobloc {
+margin: 20px 20px 0 20px;
+}
+.key-feature__infobloc>p {
+    margin-bottom: 15px;
+}
+.main-menu{
+	display: none;
+}
+
+.main-menu li{
+	display:block;
+	width: 100%;
+	height: 50%;
+}
+nav{
+	justify-content: center;
+	width: 40%;
+}
+.menu-link{
+	display: inline-flex;
+}
+.toggle-button{
+	text-align: center;
+	display: block;
+	cursor: pointer;
+	color: #fff;
+	display: flex;
+	align-items: center;
+}
+.toggle-button:after{
+	content: attr(data-open);
+position: absolute;
+left: 290px;
+}
+
+#menu-checkbox:checked + nav[role="navigation"] .main-menu{
+	display: block;
+}
+#menu-checkbox:checked + nav[role="navigation"] .toggle-button:after{
+	content: attr(data-close);
+}
+.main-menu{
+	position: relative;
+	top:10vh;
+}
+.header-wrap header{
+	overflow: visible;
+}
+nav ul {
+	width: auto;
+}
+
+
 }
