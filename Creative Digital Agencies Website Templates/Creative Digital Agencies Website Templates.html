@@ -11,15 +11,17 @@
 </head>
 <body>
 	<div class="palitra">
-	
+
 	<div class="header-wrap">
 		<header>
 			<div class="logo">
 				CS
-			</div>	
-
-		<nav>
-			<ul>
+			</div>
+<input type="checkbox" id="menu-checkbox">
+		<nav role="navigation">
+			<label for="menu-checkbox" class="toggle-button"
+			data-open="MENU" data-close="CLOSE" onclick></label>
+			<ul class="main-menu">
 				<li><a href="#" class="menu-link">Home </a></li>
 				<li><a href="#" class="menu-link">Pages</a></li>
 				<li><a href="#" class="menu-link">Features</a></li>
@@ -48,12 +50,12 @@
 						Scroll Down
 					</p>
 					<div class="arrow-down">
-						<a href="#"><i class=" fas fa-arrow-down"></i></a>
+						<a href="#scrol-down"><i class=" fas fa-arrow-down"></i></a>
 					</div>
 
 				</div>
 	</div>
-	
+
 	<div class="about_agency-wrap">
 		<div class="heading">
 		<h1>W</h1>
@@ -84,11 +86,11 @@
 	</div>
 
 	<div class="news-wrap">
-		<div class="block-news ">
+		<div class="block-news">
 		<div class="bloc-news__text">
 		<div class="data">
 			<data>Jan 4, 2016 </data>
-			<p></p> 
+			<p></p>
 			<span>In Culture</span>
 		</div>
 		<div>
@@ -100,15 +102,17 @@
 		</div>
 		</div>
 		</div>
-		<div class="block-news ">
+		<div class="block-news">
+			<img src="image/agency_news_1.jpg" alt="">
 		</div>
 		<div class="block-news ">
+			<img src="image/agency_news_2.jpg" alt="">
 		</div>
 		<div class="block-news">
 		<div class="bloc-news__text">
 		<div class="data">
 			<data>Jan 4, 2016 </data>
-			<p></p> 
+			<p></p>
 			<span>In Culture</span>
 		</div>
 		<div>
@@ -122,38 +126,39 @@
 		</div>
 	</div>
 
-	<div class="blog-quick-wrap">
-		<div class=" blog-wrap">
+	<div class="blog-team-quick-wrap">
+		<div class=" blog-team-wrap">
 			<header>
 				<h1>B</h1>
 				<h2>Let's blog</h2>
 			</header>
-			<h3>We love clean design and advanced digital solutions. </h2>
+			<h3>We love clean design and advanced digital solutions. </h3>
 		</div>
+
 		<div class="quick-wrap">
-			<div class="info-blog info-blog__1">
+			<div class="info-blog-team">
 				<img src="image/blog_1.jpg" alt="">
 				<h3>Fresh Summer Campaign </h3>
 				<p>Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sed odio dui. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.</p>
 			</div>
-			<div class="info-blog info-blog__2">
+			<div class="info-blog-team">
 				<img src="image/blog_2.jpg" alt="">
 				<h3>Fresh Summer Campaign </h3>
 				<p>Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sed odio dui. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.</p>
 			</div>
-			<div class="info-blog info-blog__3">
+			<div class="info-blog-team ">
 				<img src="image/blog_3.jpg" alt="">
 				<h3>Fresh Summer Campaign </h3>
 				<p>Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sed odio dui. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.</p>
 			</div>
-			<div class="info-blog info-blog__4">
+			<div class="info-blog-team ">
 				<img src="image/blog_1.jpg" alt="">
 				<h3>Fresh Summer Campaign</h3>
 				<p>Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sed odio dui. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.</p>
 			</div>
 		</div>
 	</div>
-		
+
 	<div class="quick-action-wrap">
 		<div class="quick-action">
 			<i class="far fa-edit"></i>
@@ -164,21 +169,180 @@
 			<p>Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sed odio dui. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.</p>
 		</div>
 	</div>
-	
+
 	<div class="key-feature">
 		<div class="key-feature__infobloc">
 			<h1>Akita Inu Dog</h1>
 			<p>Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sed odio dui. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.</p>
-			<div>Fully Responsive Design</div>
-			<div>High Quality Code</div>
-			<div>Different Headers & Layout</div>
-
+			<div class="key-feature__infobloc__persent">
+			<p>Fully Responsive Design</p>
+			<p  >High Quality Code</p>
+			<p >Different Headers & Layout</p>
+			</div >
 		</div>
-		<div><img src="image/key_feature_iphone.png" alt=""></div>
+		<div class="key_feature__iphone"><img src="image/key_feature_iphone.png" alt=""></div>
+		</div>
+
+	<div class="blog-team-quick-wrap ">
+			<div class="blog-team-wrap">
+				<header>
+					<h1>T</h1>
+					<h2>Our team</h2>
+				</header>
+				<h3> Sales long tail influencer pitch release niche market. </h3>
+			</div>
+			<div class="quick-wrap quick-wrap__team ">
+				<div class="info-blog-team info-blog-team-team__1 employee">
+						<img src="image/team_member_1.jpg" alt="">
+							<div class="employee__info">
+								<h3>JOHN SNOW </h3>
+								<p>Ceo.</p>
+						</div>
+				</div>
+				<div class="info-blog-team  info-blog-team__2 employee">
+					<img src="image/team_member_2.jpg" alt="">
+						<div class="employee__info">
+							<h3>LADY SANSA </h3>
+							<p>WebDesigner.</p>
+						</div	>
+				</div>
+				<div class="info-blog-team info-blog-team__3 employee">
+					<img src="image/team_member_3.jpg" alt="">
+						<div class="employee__info">
+							<h3>DAVID SMITH</h3>
+							<p>Photographer.</p>
+					</div>
+				</div>
+				<div class="info-blog-team info-blog-team__4 employee">
+					<img src="image/team_member_4.jpg" alt="">
+						<div class="employee__info">
+							<h3>LADY SANSA</h3>
+							<p>Photographer.</p>
+						</div>
+				</div>
+			</div>
+		</div>
+
+	<div id="scrol-down" class="contack-area-wrap">
+		<div class="heading">
+			<h1>C</h1>
+			<h2> We’d love to hear about your project.  </h2>
+		</div>
+		<div class="form-container">
+			<form  class="" action="index.html" method="post">
+				<div class="multi-input">
+					<input type="text" name="name" id="name" placeholder="Name">
+					<input type="text" name="email" id="email" placeholder="Email">
+					<input type="text" name="phoone" id="phoone" placeholder="Phone">
+				</div>
+				<textarea name="massage" placeholder="Massage"></textarea>
+
+				<input type="submit" name="Submit" value="Submit" placeholder="Submit">
+			</form>
+		</div>
 	</div>
+<div id="map"></div>
+<footer>
+	<p>© 2016 PSDfreebies.com – All Right Reserved</p>
+</footer>
+
 
 </div>
+<script>
+function initMap() {
+let uluru = {lat: 50.4508806, lng: 30.5226771};
+let map = new google.maps.Map(
+		document.getElementById('map'), {
+			zoom: 11,
+			center: uluru,
+			styles: [
+					 {elementType: 'geometry', stylers: [{color: '#242f3e'}]},
+					 {elementType: 'labels.text.stroke', stylers: [{color: '#242f3e'}]},
+					 {elementType: 'labels.text.fill', stylers: [{color: '#746855'}]},
+					 {
+						 featureType: 'administrative.locality',
+						 elementType: 'labels.text.fill',
+						 stylers: [{color: '#d59563'}]
+					 },
+					 {
+						 featureType: 'poi',
+						 elementType: 'labels.text.fill',
+						 stylers: [{color: '#d59563'}]
+					 },
+					 {
+						 featureType: 'poi.park',
+						 elementType: 'geometry',
+						 stylers: [{color: '#263c3f'}]
+					 },
+					 {
+						 featureType: 'poi.park',
+						 elementType: 'labels.text.fill',
+						 stylers: [{color: '#6b9a76'}]
+					 },
+					 {
+						 featureType: 'road',
+						 elementType: 'geometry',
+						 stylers: [{color: '#38414e'}]
+					 },
+					 {
+						 featureType: 'road',
+						 elementType: 'geometry.stroke',
+						 stylers: [{color: '#212a37'}]
+					 },
+					 {
+						 featureType: 'road',
+						 elementType: 'labels.text.fill',
+						 stylers: [{color: '#9ca5b3'}]
+					 },
+					 {
+						 featureType: 'road.highway',
+						 elementType: 'geometry',
+						 stylers: [{color: '#746855'}]
+					 },
+					 {
+						 featureType: 'road.highway',
+						 elementType: 'geometry.stroke',
+						 stylers: [{color: '#1f2835'}]
+					 },
+					 {
+						 featureType: 'road.highway',
+						 elementType: 'labels.text.fill',
+						 stylers: [{color: '#f3d19c'}]
+					 },
+					 {
+						 featureType: 'transit',
+						 elementType: 'geometry',
+						 stylers: [{color: '#2f3948'}]
+					 },
+					 {
+						 featureType: 'transit.station',
+						 elementType: 'labels.text.fill',
+						 stylers: [{color: '#d59563'}]
+					 },
+					 {
+						 featureType: 'water',
+						 elementType: 'geometry',
+						 stylers: [{color: '#17263c'}]
+					 },
+					 {
+						 featureType: 'water',
+						 elementType: 'labels.text.fill',
+						 stylers: [{color: '#515c6d'}]
+					 },
+					 {
+						 featureType: 'water',
+						 elementType: 'labels.text.stroke',
+						 stylers: [{color: '#17263c'}]
+					 }
+				 ]
+
+		});
+let marker = new google.maps.Marker({position: uluru, map: map});
+}
+	</script>
+	<script async defer
+	src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCYeAykN1o-f8rJCaHtVjUHRQfr79eCyok&callback=initMap">
+	</script>
+
 </body>
 </html>
-
-<script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
